@@ -3,14 +3,27 @@ package br.com.mobot.ondealmoarembauru.model;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
-public class LoginModel {
+import java.util.List;
 
+public class RestauranteList {
+
+    @SerializedName("restaurantes")
+    @Expose
+    private List<Restaurante> restaurantes = null;
     @SerializedName("mensagem")
     @Expose
     private String mensagem;
     @SerializedName("sucesso")
     @Expose
     private Boolean sucesso;
+
+    public List<Restaurante> getRestaurantes() {
+        return restaurantes;
+    }
+
+    public void setRestaurantes(List<Restaurante> restaurantes) {
+        this.restaurantes = restaurantes;
+    }
 
     public String getMensagem() {
         return mensagem;

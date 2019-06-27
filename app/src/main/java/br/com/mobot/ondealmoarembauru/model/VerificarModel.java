@@ -3,8 +3,7 @@ package br.com.mobot.ondealmoarembauru.model;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
-public class LoginModel {
-
+public class VerificarModel {
     @SerializedName("mensagem")
     @Expose
     private String mensagem;
@@ -27,4 +26,5 @@ public class LoginModel {
     public void setSucesso(Boolean sucesso) {
         this.sucesso = sucesso;
     }
+
 }
